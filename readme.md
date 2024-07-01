@@ -6,11 +6,11 @@ These scripts utilize the Hubspot API to fetch all the companies from a HubSpot 
 
 // clone the repository:
 
-git clone https://github.com/idmasse/hubspot.git
+git clone https://github.com/idmasse/hubspot-scripts.git
 
 // cd into the new directory:
 
-cd hubspot
+cd hubspot-scripts
 
 // install the required packages
 

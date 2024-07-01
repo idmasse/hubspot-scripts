@@ -1,0 +1,42 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+venv/
+env/
+hsvenv/
+
+# Package files
+*.egg-info/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Test results
+.coverage
+htmlcov/
+*.cover
+
+# Build files
+build/
+dist/
+*.egg
+
+# MySQL Workbench files
+*.mwb

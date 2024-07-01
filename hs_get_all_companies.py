@@ -30,13 +30,3 @@ def get_hs_companies():
         print(f"exception when calling companies api: {e}\n")
 
     return all_companies_list
-
-# call the function and store its result
-companies = get_hs_companies()
-
-if companies:
-    print(len(companies), "Company names found in HubSpot:")
-    for company in companies:
-        print(company.properties.get('name', 'No name property'))
-else:
-    print("No company names found.")

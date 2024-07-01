@@ -1,6 +1,7 @@
 from hs_auth import *
 from hubspot.crm.companies import ApiException
 
+# change these property names for what you need from your hubspot account
 PROPERTIES = ["flip_margin", "magicos_status", "name", "magicos_vendor_id", "website", "business_type"]
 
 def get_hs_companies():
@@ -29,3 +30,13 @@ def get_hs_companies():
         print(f"exception when calling companies api: {e}\n")
 
     return all_companies_list
+
+# call the function and store its result
+companies = get_hs_companies()
+
+if companies:
+    print(len(companies), "Company names found in HubSpot:")
+    for company in companies:
+        print(company.properties.get('name', 'No name property'))
+else:
+    print("No company names found.")

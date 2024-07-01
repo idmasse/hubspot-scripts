@@ -21,7 +21,9 @@ pip install -r requirements.txt
 ## Usage
 
 // print all hubspot companies
+
 python3 hs_print_companies.py
 
 // print hubspot duplicate company names
+
 python3 hs_dupes.py
